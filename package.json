@@ -2,7 +2,8 @@
   "name": "tasklist",
   "type": "module",
   "imports": {
-    "#*": "./*.js"
+    "#app": "./app.js",
+    "#db/client": "./db/client.js"
   },
   "scripts": {
     "dev": "node --watch --env-file=.env server.js",
@@ -12,9 +13,10 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "pg": "^8.14.1"
+    "pg": "^8.16.0"
   },
   "devDependencies": {
     "supertest": "^7.1.0",
